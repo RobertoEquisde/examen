@@ -28,7 +28,7 @@ class Gato():
             print(self)
 
       def revisa(self):
-            for i in range(3):
+            for i in range(1,3):
                   for j in range (3):
                         #Horizontales
                         if self.M[j][0] == self.M[j][1] and self.M[j][1] == self.M[j][2] and self.M[j][2] == i:
