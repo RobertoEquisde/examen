@@ -36,14 +36,14 @@ class Gato():
                         #Verticales
                         if self.M[0][j] == self.M[1][j] and self.M[1][j] == self.M[2][j] and self.M[2][j] == i:
                               return i
-            #Diagonales
-            if self.M[0][0] == self.M[1][1] and self.M[1][1] == self.M[2][2] and self.M[2][2] == i:
-                  return i
-            if self.M[0][2] == self.M[1][1] and self.M[1][1] == self.M[2][0] and self.M[2][0] == i:
-                   return i
-                  #Si aun quedan movimientos#
+                  #Diagonales
+                  if self.M[0][0] == self.M[1][1] and self.M[1][1] == self.M[2][2] and self.M[2][2] == i:
+                        return i
+                  if self.M[0][2] == self.M[1][1] and self.M[1][1] == self.M[2][0] and self.M[2][0] == i:
+                        return i
+            #Si aun quedan movimientos#
             for k in range(self.Ren):
-                   for m in range(self.Col):
+                  for m in range(self.Col):
                         if self.M[m][k] == 0:
                               return 0
             return 3
