@@ -20,7 +20,9 @@ class Gato():
                         r += L[self.M[i][j]]
                         if j < 2:
                               r += " | "
-                  r += "\n---------------\n"       
+                  
+                  if (i < 2):
+                        r += "\n---------------\n"       
             return r
 
       def visualiza(self):
